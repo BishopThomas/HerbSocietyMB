@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo");
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #FF7851;
+  --orange: #fd7e14;
+  --yellow: #FFCE67;
+  --green: #56CC9D;
+  --teal: #20c997;
+  --cyan: #6CC3D5;
+  --white: #fff;
+  --gray: #888;
+  --gray-dark: #343a40;
+  --primary: #78C2AD;
+  --secondary: #F3969A;
+  --success: #56CC9D;
+  --info: #6CC3D5;
+  --warning: #FFCE67;
+  --danger: #FF7851;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  /* --font-family: 'Arimo', sans-serif; */
+  /* --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+  /* --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
+}
+
+h1, h2, h3, h4, p {
+  font-family: 'Arimo', sans-serif;
+}
+
+
+.logo{
+  height:75px;
+  width:75px;
+}
+
+.topblock {
+  position: relative;
+  top: 0px;
+  left: 0;
+  background: url('../images/herb garden photo-2013.jpg') no-repeat center center fixed;
+  height:350px;
+  /* background-position-y: -50px; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  /* -webkit-transition: height 0.5s; */
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+
+.topblock_expanded {
+  height:550px;
+}
+
+.container-fluid{
+  margin-bottom:0px;
+  padding-bottom:0px;
+}
+
+.container-mbherb-1{
+  padding: 30px 30px;
+  padding-bottom: 20px;
+  /* margin-bottom:30px; */
+  background-color: #FFF;
+  box-shadow: 5px 5px 5px #AAA;
+  margin:10px;
+  margin-top:0px;
+  padding-top:0px;
+}
+
+.container-mbherb{
+  padding: 0px 100px;
+  padding-bottom: 20px;
+  /* margin-bottom:30px; */
+  background-color: #FFF;
+  box-shadow: 5px 5px 5px 5px #AAA;
+  margin:10px;
+  padding-top:20px;
+}
+
+.pt--100{
+  margin-top:-100px;
+}
+
+.navbar-move-up {
+  position: relative;
+  -webkit-transition: top 2s; /* Safari */
+  /* bottom: -400px; */
+  top:-340px;
+  margin-bottom:-300px;
+}
+
+
+.navbar {
+  position:relative;
+  bottom: 100px;
+  left: 0px;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  z-index: 999999;
+}
+.navbar-light{
+  opacity:0.9;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:50px;
+  opacity:1;
+  left: 0;
+}
+
+.sticky-expanded {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:350px;
+  opacity:1;
+  left: 0;
+}
+
+.sticky + .content {
+  /* padding-top: 60px; */
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  left: 0;
+}
+.mission{
+  background-color: #A8E363;
+  background-color: #99CC66;
+  opacity:0.9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom:10px;
+  box-shadow: 5px 5px 5px #AAA;
+}
+
+.hide-md{
+  display:block;
+}
+
+.text-green{
+  color:#38701B;
+  /* color:#B0C27D; */
+}
+
+.text-green2{
+  /* color:#34BE0A; */
+  color:#31950C;
+}
+
+ul.text-green li a {
+  color:inherit;
+}
+
+.md-photo{
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.sm-photo{
+  max-height: 150px;
+  max-width: 150px;
+}
+
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+.grid--borderBetween > [class*='col-']:before,
+.grid--borderBetween > [class*='col-']:after {
+    background: #b2b2b2;
+    bottom: 0;
+    content: " ";
+    position: absolute;
+    width: 1px;
+    top: 0;
+    color:#99CC66;
+}
+.grid--borderBetween > [class*='col-']:before {
+    left: 0;
+}
+.grid--borderBetween > [class*='col-']:after {
+    right: -1px;
+}
+.grid--borderBetween > [class*='col-']:first-child:before,
+.grid--borderBetween > [class*='col-']:last-child:after {
+    display: none;
+}
+
+hr.style-eight{
+  display:none;
+}
+
+hr.style-eight-perm{
+  display:block;
+}
+
+.show-sm{
+display:none;
+}
+
+.center-rev-lg{
+  text-align:center;
+}
+
+ul.herbBullets{
+  list-style-image: url(../images/herbBullet-sm.png);
+}
+
+.show-lg{
+  display:none;
+}
+
+@media all and (max-width: 992px) {
+  .show-lg{
+    display:block;
+  }
+
+  .grid--borderBetween > [class*='col-']:before,
+  .grid--borderBetween > [class*='col-']:after {
+      width: 0px;
+  }
+  hr.style-eight{
+    display:block;
+    width:100%;
+  }
+
+  .navbar {
+    font-size:small;
+}
+
+.center-rev-lg{
+  text-align:left;
+}
+}
+
+@media all and (max-width: 768px) {
+
+  .hide-md{
+    display:none;
+  }
+
+  .topblock {
+    /* background: url('../images/herb garden photo-2013-cropped.jpeg') no-repeat center center fixed; */
+    /* background: none; */
+    height:100px;
+  }
+
+  .topblock_expanded {
+    height:340px;
+  }
+
+  .navbar-move-up {
+    position: relative;
+    -webkit-transition: top 2s; /* Safari */
+    /* bottom: -400px; */
+    top:-340px;
+    margin-bottom:-340px;
+  }
+
+  .container-mbherb-1{
+    padding: 0px 20px;
+    margin-left:0px;
+    margin-right:0px;
+    box-shadow: none;
+  }
+
+  .container-mbherb{
+    padding: 0px 40px;
+    margin-left:0px;
+    margin-right:0px;
+    box-shadow: none;
+    margin-bottom:0px;
+  }
+  .navbar {
+    font-size:medium;
+}
+
+}
