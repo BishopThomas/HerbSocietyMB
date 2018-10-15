@@ -169,6 +169,10 @@ ul.text-green li a {
   color:inherit;
 }
 
+.lg-photo{
+  max-height: 800px;
+  max-width: 30vw;
+}
 .md-photo{
   max-height: 300px;
   max-width: 300px;
@@ -242,6 +246,33 @@ ul.herbBullets{
   display:none;
 }
 
+.herb-background{
+  /* position: relative;
+  top: 0px;
+  left: 0; */
+  background: url('../images/chives-close-up-fresh-461246.jpg') repeat-y center center fixed;
+  height:1300px;
+  opacity:0.2;
+  /* background-position-y: -50px; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  /* -webkit-transition: height 0.5s; */
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+
+.p-rel{
+  position:relative;
+}
+
+.background-content{
+  position:absolute;
+  top:0px;
+  background-color:white;
+}
+
 @media all and (max-width: 992px) {
   .show-lg{
     display:block;
@@ -262,6 +293,10 @@ ul.herbBullets{
 
 .center-rev-lg{
   text-align:left;
+}
+
+.herb-background{
+  height:1600px;
 }
 }
 
@@ -290,7 +325,7 @@ ul.herbBullets{
   }
 
   .container-mbherb-1{
-    padding: 0px 20px;
+    padding: 0px 40px;
     margin-left:0px;
     margin-right:0px;
     box-shadow: none;
@@ -306,5 +341,9 @@ ul.herbBullets{
   .navbar {
     font-size:medium;
 }
+.lg-photo{
+  max-width: 80vw;
+}
+
 
 }
